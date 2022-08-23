@@ -5,3 +5,9 @@ type UserResponse struct {
 	Message string                 `json:"message"`
 	Data    map[string]interface{} `json:"data"`
 }
+
+type DomainResponse struct {
+	Status  int                    `json:"status"`
+	Message string                 `json:"message"`
+	Data    map[string]interface{} `json:"data"`
+}

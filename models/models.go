@@ -8,3 +8,9 @@ type User struct {
 	Location string             `json:"location,omitempty" validate:"required"`
 	Title    string             `json:"title,omitempty" validate:"required"`
 }
+
+type Domain struct {
+	Id   primitive.ObjectID     `json:"id,omitempty"`
+	Name string                 `json:"name,omitempty" validate:"required"`
+	Data map[string]interface{} `json:"data"`
+}

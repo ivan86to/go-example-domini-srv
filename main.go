@@ -15,6 +15,7 @@ func main() {
 
 	//routes
 	routes.UserRoute(router)
+	routes.DomainRoute(router)
 
 	router.Run("localhost:8080")
 }
